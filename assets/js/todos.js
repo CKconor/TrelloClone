@@ -16,7 +16,7 @@ $("ul").on("click", "span", function(event) {
 //Add to List
 
 $("#add").click(function() {
-    $("#addinput").show();
+    $("#addinput").fadeIn();
 });
 
 $("input[type='text']").keypress(function(event) {
@@ -24,7 +24,7 @@ $("input[type='text']").keypress(function(event) {
         var todoText = $(this).val();
         $(this).val("");
         $("ul").append("<li><span><i class='fas fa-trash-alt'></i> </span>" + " " + todoText + "</li>");
-        $("#addinput").hide();
+        $("#addinput").fadeOut();
     }
 
 });

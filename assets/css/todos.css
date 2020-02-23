@@ -60,7 +60,12 @@ li:hover {
 
 .fa-plus-circle {
     float: right;
-    display: none;
+    cursor: pointer;
+}
+
+.fa-plus-circle:hover {
+    color: white;
+    transition: 0.2s ease-in;
 }
 
 #container {
